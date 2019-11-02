@@ -1,19 +1,24 @@
-<div *ngIf="user" class="user-container">
-    <mat-form-field>
-        <input matInput [(ngModel)]="user.id" placeholder="Id">
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput [(ngModel)]="user.login" placeholder="Login">
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput [(ngModel)]="user.url" placeholder="Profile URL">
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput [(ngModel)]="user.id" placeholder="Login Creation">
-    </mat-form-field>
+<div style="display: flex; justify-content: center; align-items: center">
+    <mat-card style="width: 60%" *ngIf="!isLoading" class="user-card">
+        <mat-card-header>
+            <div style="margin: 5px;" mat-card-avatar class="user-header-image"><img mat-card-image class="user-avatar" src="{{user.avatar_url}}" alt=""></div>
+            <mat-card-title style="margin-left: 10px;">{{user.login}}</mat-card-title>
+            <mat-card-subtitle style="margin-left: 10px;">Github User</mat-card-subtitle>
+        </mat-card-header>
+        <div *ngIf="user" class="user-container">
+            <br />
+            <mat-form-field>
+                <input [disabled]="true" matInput [(ngModel)]="user.id" placeholder="Id">
+            </mat-form-field>
+            <mat-form-field>
+                <input [disabled]="true" matInput [(ngModel)]="user.login" placeholder="Login">
+            </mat-form-field>
+            <mat-form-field>
+                <input [disabled]="true" matInput [(ngModel)]="user.url" placeholder="Profile URL">
+            </mat-form-field>
+            <mat-form-field>
+                <input [disabled]="true" matInput [(ngModel)]="user.created_at" placeholder="Login Creation">
+            </mat-form-field>
+        </div>
+    </mat-card>
 </div>
-
-<mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
-    <mat-progress-spinner color="primary" mode="indeterminate">
-    </mat-progress-spinner>
-  </mat-card>

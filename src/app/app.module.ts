@@ -11,6 +11,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 
 @NgModule({
@@ -28,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatProgressSpinnerModule,
     MatCardModule,
     HttpClientModule,
-    MatFormModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

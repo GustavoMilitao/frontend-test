@@ -5,3 +5,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .user-list-paginator .mat-paginator-range-label {
     display: none;
 }
+.user-avatar {
+    border-radius: inherit;
+  }
