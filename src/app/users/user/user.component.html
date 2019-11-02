@@ -1,1 +1,19 @@
-<p>user works!</p>
+<div *ngIf="user" class="user-container">
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.id" placeholder="Id">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.login" placeholder="Login">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.url" placeholder="Profile URL">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="user.id" placeholder="Login Creation">
+    </mat-form-field>
+</div>
+
+<mat-card *ngIf="isLoading" style="display: flex; justify-content: center; align-items: center">
+    <mat-progress-spinner color="primary" mode="indeterminate">
+    </mat-progress-spinner>
+  </mat-card>
