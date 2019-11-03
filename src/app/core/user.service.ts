@@ -18,8 +18,7 @@ export class UserService {
   }
 
   getUserDetails(login: string) {
-    return this.http.get<User>(`${environment.apiAddress}/users/${login}/details`, 
-    { params: login ? { since: login.toString() } : null });
+    return this.http.get<User>(`${environment.apiAddress}/users/${login}/details`);
   }
 
   listUserRepos(login: string) {
