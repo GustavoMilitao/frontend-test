@@ -10,7 +10,7 @@ Repository for Backend of Fullstack Test from Shaw and partners.
         - Open a terminal.
         - Navigate to project root folder.
         - Execute sudo su.
-        - Execute .sh file like this sh start.sh.
+        - Execute .sh file like this sh start.sh. (It may take some time).
     - If you're using Windows:
         - Execute start.bat file
 4) The app will run at port 4200.
