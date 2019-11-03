@@ -14,15 +14,15 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-
-
-
+import {MatButtonModule} from '@angular/material/button';
+import { UserRepositoryListComponent } from './users/user-repositories/user-repository-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    UserComponent
+    UserComponent,
+    UserRepositoryListComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +34,7 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     HttpClientModule,
     FormsModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatInputModule
   ],

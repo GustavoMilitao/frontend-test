@@ -32,4 +32,8 @@ export class UserComponent implements OnInit {
     }
   }
 
+  openUserRepositories() {
+    this.router.navigate([`/user/${this.user.login}/repositories`]);
+  }
+
 }
