@@ -22,6 +22,6 @@
     </mat-card>
     <mat-paginator class="user-list-paginator"
     [hidePageSize]="true"
-    (page)="pageEvent = setPage($event)" [length]="size" [pageSize]="30"></mat-paginator>
+    (page)="setPage($event)" [length]="size" [pageSize]="30"></mat-paginator>
   </div>
 </mat-card>

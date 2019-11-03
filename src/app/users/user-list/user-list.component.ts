@@ -40,7 +40,7 @@ export class UserListComponent implements OnInit {
     });
   }
 
-  private setPage(event) {
+  setPage(event) {
     this.since = event.pageSize * event.pageIndex;
     this.dataSource.data = [];
     this.getUserList(this.since);
